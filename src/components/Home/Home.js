@@ -1,0 +1,57 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import "./Home.css";
+import Type from "./Typed";
+
+const Home = () => {
+  return (
+    <Container fluid className="home">
+      <Row className="home-content text-center">
+        <Col className="text">
+          <div className="home-circle">
+            <img src={khageswari} alt="khageswari" className="img-fluid" />
+          </div>
+          <div className="text-one">Hello there,</div>
+          <div className="text-two">I'm Khageswari</div>
+          <div className="text-three">
+            <Type />
+          </div>
+        </Col>
+      </Row>
+      <Row className="social-row">
+        <Col className="social-col">
+          <div className="social-links">
+            <a
+              href="https://www.linkedin.com/in/chaduvulakhageswari/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            <a
+              href="https://github.com/minnukota381"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            <a
+              href="https://instagram.com/minnukota381"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default Home;
+
